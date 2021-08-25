@@ -49,7 +49,10 @@ public class MaximumTest<T extends Comparable<T>> {
 				printMax(x,y,z,w,max);
 				return max;
 			}
-	//to print the maximum value for 3 parameters
+	/*to print the maximum value for 3 parameters
+	 * UseCase 5
+	 * print the max to std out using generic method 
+	 */
 	public static <T> void printMax(T x,T y,T z,T max)
 	{
 		System.out.printf("Max of %s,%s and %s is %s\n",x,y,z,max);
