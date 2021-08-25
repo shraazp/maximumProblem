@@ -1,25 +1,25 @@
 package genrics;
-//UseCase 1 given 3 integers ew have to find the maximum
+//UseCase 3 given 3 String values we have to find the maximum
 
-public class MaximumTest<Float extends Comparable<Float>> {
+public class MaximumTest<String extends Comparable<String>> {
 	
 	//parameterized construtor
-	Float x,y,z;  //class variables
+	String x,y,z;  //class variables
 	
 	//parameterized construuctors
-	public MaximumTest(Float x,Float y,Float z) {
+	public MaximumTest(String x,String y,String z) {
 		this.x=x;
 		this.y=y;
 		this.z=z;
 	}
 	//to get the maximum value
-	 public Float maximum()
+	 public String maximum()
 	 {
 		 return MaximumTest.maximum(x, y, z);
 	 }
 	//compare to function
-	public static <Float extends Comparable<Float>> Float maximum(Float x,Float y,Float z) {
-		Float max=x;     //will assume x is maximum then compare with y and z
+	public static <String extends Comparable<String>> String maximum(String x,String y,String z) {
+		String max=x;     //will assume x is maximum then compare with y and z
 		if(y.compareTo(max)>0) {
 			max=y;
 		}
@@ -30,7 +30,7 @@ public class MaximumTest<Float extends Comparable<Float>> {
 		return max;
 	}
 //to print the maximum value
-	public static <Float> void printMax(Float x,Float y,Float z,Float max)
+	public static <String> void printMax(String x,String y,String z,String max)
 	{
 		System.out.printf("Max of %s,%s and %s is %s\n",x,y,z,max);
 	}
