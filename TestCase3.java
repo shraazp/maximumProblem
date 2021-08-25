@@ -4,9 +4,9 @@ public class TestCase3 {
 
 	public static void main(String[] args) {
 		
-	//for int values
-		int xInt=80,yInt=50,zInt=756;
-		new MaximumTest(xInt,yInt,zInt).maximum();
+	//for String values
+		String xStr="orange",yStr="apple",zStr="pear";
+		new MaximumTest(xStr,yStr,zStr).maximum();
 	}
 
 }
