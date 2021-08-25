@@ -1,19 +1,19 @@
 package genrics;
 //UseCase 1 given 3 integers ew have to find the maximum
 
-public class MaximumTest<Float extends Comparable<Float>> {
+public class MaximumTest<T extends Comparable<T>> {
 	
 	//parameterized construtor
-	Float x,y,z;  //class variables
+	T x,y,z;  //class variables
 	
 	//parameterized construuctors
-	public MaximumTest(Float x,Float y,Float z) {
+	public MaximumTest(T x,T y,T z) {
 		this.x=x;
 		this.y=y;
 		this.z=z;
 	}
 	//to get the maximum value
-	 public Float maximum()
+	 public T maximum()
 	 {
 		 return MaximumTest.maximum(x, y, z);
 	 }
@@ -30,7 +30,7 @@ public class MaximumTest<Float extends Comparable<Float>> {
 			return max;
 		}
 //to print the maximum value
-	public static <Float> void printMax(Float x,Float y,Float z,Float max)
+	public static <T> void printMax(T x,T y,T z,T max)
 	{
 		System.out.printf("Max of %s,%s and %s is %s\n",x,y,z,max);
 	}
