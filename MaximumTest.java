@@ -18,17 +18,17 @@ public class MaximumTest<Float extends Comparable<Float>> {
 		 return MaximumTest.maximum(x, y, z);
 	 }
 	//compare to function
-	public static <Float extends Comparable<Float>> Float maximum(Float x,Float y,Float z) {
-		Float max=x;     //will assume x is maximum then compare with y and z
-		if(y.compareTo(max)>0) {
-			max=y;
+	 public static <T extends Comparable<T>> T maximum(T x,T y,T z) {
+			T max=x;     //will assume x is maximum then compare with y and z
+			if(y.compareTo(max)>0) {
+				max=y;
+			}
+			if(z.compareTo(max)>0) {
+				max=z;
+			}
+			printMax(x,y,z,max);
+			return max;
 		}
-		if(z.compareTo(max)>0) {
-			max=z;
-		}
-		printMax(x,y,z,max);
-		return max;
-	}
 //to print the maximum value
 	public static <Float> void printMax(Float x,Float y,Float z,Float max)
 	{
